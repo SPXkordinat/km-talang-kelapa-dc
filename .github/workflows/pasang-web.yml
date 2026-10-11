@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Ambil paket web
         run: |
-          curl -fsSL -o web.zip "https://sg.migoo.ai/beeai/api/v1/media/signed/budee/2026/10/10/76fe536d.zip?expires=1791653747&sig=4c1fae846351a30420d453ec65b8603ceabc3334cef772ac22bb3e17d20913f2"
+          curl -fsSL -o web.zip "https://sg.migoo.ai/beeai/api/v1/media/signed/budee/2026/10/11/9f450b7a.zip?expires=1791728681&sig=45b3a507e380491807a1fe441c6a7cde027d0db24f24e810439f24cd71f9facd"
           mkdir site
           cd site
           unzip -q ../web.zip
@@ -26,5 +26,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -q -m "Pasang KM Talang Kelapa DC v1.4"
+          git commit -q -m "Pasang KM Talang Kelapa DC v1.5"
           git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
